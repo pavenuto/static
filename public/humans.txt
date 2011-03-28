@@ -1,0 +1,16 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Site: http://staceyapp.com
+  Twitter:
+  Location: all over the place
+
+/* THANKS */
+  Names (& URL): http://staceyapp.com
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: PHP, HTML, CSS, JavaScript, JSON, Markdown

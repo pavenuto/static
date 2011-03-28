@@ -1,0 +1,32 @@
+:header
+<div id="container">
+  <header class="col ten">
+    <h1 class="col three">
+      <a href="@root_path">@name</a>
+    </h1>
+  </header>
+  :navigation
+  <article id="content" role="main" class="col seven">
+    <p class="date col one">@date</p>
+    <div class="description col seven">
+      <h2><a href="@root_path">@title</a></h2>
+      @content
+    </div>
+    <p id="project-count" class="col one"><em>&#8470;</em> @index/@siblings_count</p>
+    <p id="gallery-count" class="col one">
+      <em>&#8470;</em> <span>1/1</span>
+    </p>
+    <div id="gallery-navigation" class="col three">
+      <p><a href="#" id="next-image">Next image</a> <em>&rarr;</em></p>
+      <p><a href="#" id="previous-image">Previous image</a> <em>&larr;</em></p>
+    </div> <!-- end #gallery-navigation -->
+    <div class="col four">
+      if $siblings do
+        :next-page
+        :previous-page
+      endif
+    </div>
+    :media
+  </article> <!-- end #content -->
+</div><!-- end #container -->
+:footer
