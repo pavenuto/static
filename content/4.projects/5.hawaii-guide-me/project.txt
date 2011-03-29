@@ -1,6 +1,6 @@
-title: 2 Movie Project
+title: Hawaii Guide Me
 -
-date: 2009, Feb–
+date: 2009, Jun–
 -
 content:
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
