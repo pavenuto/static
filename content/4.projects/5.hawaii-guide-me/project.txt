@@ -1,6 +1,6 @@
 title: Hawaii Guide Me
 -
-date: 2009, Jun–
+site_url: http://www.dumb.com/
 -
 content:
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

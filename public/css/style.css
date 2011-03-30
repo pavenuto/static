@@ -92,7 +92,7 @@ html { overflow-y: scroll; }
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
-a, a:active, a:visited { color: #7DDA69; }
+a, a:active, a:visited { color: #B1CFA8; }
 a:hover { color: #6EC15C; }
 
 
@@ -181,23 +181,40 @@ textarea { overflow: auto; }*/
 body, a { color: #222; }
 em, em a, strong, p.date, div#project-navigation p { color: #999; }
 a {
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #adadad;
   text-decoration: none;
 }
 
 /* Typography */
 
 html, body {
-  font-family: "Courier", monospace, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
   height: 100%;
+  background-color: #F1F1F1;
 }
 
 ul li, p, em, .description {
   font-size: 13px;
   font-style: normal;
+}
+.description {
+  margin: 20px 0 0 90px !important;
+  float: none;
+}
+.description > h1,
+#content > h1 {
+  text-align: center !important;
+  font-family: Tungsten;
+  font-weight: 200;
+  letter-spacing: 1px;
+  border-top: 4px solid rgba(0,0,0, 0.2);
+  border-bottom: 4px solid rgba(0,0,0,0.2);
+  height: 110px;
+  line-height: 110px;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -251,10 +268,25 @@ body {
 header {
   height: 90px;
 }
+header nav {
+  position: fixed;
+  top: 90px;
+  left: 90px;
+}
+header nav a {
+  font-weight: bold;
+  color: #000 !important;
+}
 
 header h1 {
   margin:0 0px 0 0 !important;
 }
+header img { opacity: 0.1; position: absolute; top: -150px;}
+
+#top {position: fixed; top: 10px; left: 10px; right: 10px; height: 0px; border-bottom: 10px solid #444;}
+#bottom {position: fixed; bottom: 10px; left: 10px; right: 10px; height: 0px; border-top: 10px solid #444;}
+#left {position: fixed; top: 10px; left: 10px; bottom: 10px; width: 0px; border-right: 10px solid #444;}
+#right {position: fixed; top: 10px; right: 10px; bottom: 10px; width: 0px; border-left: 10px solid #444;}
 
 /* ================ */
 /* = The 1Kb Grid = */     /* 12 columns, 60 pixels each, with 10 pixel gutter */
@@ -332,10 +364,25 @@ footer, .push {
 }
 footer {
   display:inline;
-  text-align:center;
-  width:99%;
+  text-align: right;
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+  color: rgba(0,0,0,0.3);
+  font-size: 11px;
 }
 
+.csstransforms footer {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  right: -20px;
+  height: 11px;
+  bottom: 120px;
+  position: fixed;
+}
 article .date {
   text-align: right;
   padding: 14px 10px 0px 0px;
